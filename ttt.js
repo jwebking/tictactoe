@@ -2,7 +2,7 @@ var oriBoard=[];
 const  human = "O";
 const AI = 'X';
 
-const winCombo = [
+const winCombo = [ //the board positions 
     [0,1,2],
     [3,4,5],
     [6,7,8],
@@ -91,7 +91,7 @@ function turn(squareId, player){
         return false;
     }
 
-    function minimax(newBoard, player){
+    function minimax(newBoard, player){ //uses recursion and BST to find possible winning combinations
         var availableSpots = emptySquares(newBoard);
 
         if(checkWin(newBoard, player)){
