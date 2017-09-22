@@ -11,31 +11,41 @@
 </head>
 
 <body>
-
+    <div class="container">
+      <h3 id="ttt">Tic Tac Toe</h3>
     <table>
-        <tr>
-            <td class="cell" id="0"></td>
-            <td class="cell" id="1"></td>
-            <td class="cell" id="2"></td>
-        </tr>
-        <tr>
-            <td class="cell" id="3"></td>
-            <td class="cell" id="4"></td>
-            <td class="cell" id="5"></td>
-        </tr>
-        <tr>
-            <td class="cell" id="6"></td>
-            <td class="cell" id="7"></td>
-            <td class="cell" id="8"></td>
-        </tr>
+      <tr>
+        <td class="cell" id="0"></td>
+        <td class="cell" id="1"></td>
+        <td class="cell" id="2"></td>
+      </tr>
+      <tr>
+        <td class="cell" id="3"></td>
+        <td class="cell" id="4"></td>
+        <td class="cell" id="5"></td>
+      </tr>
+      <tr>
+        <td class="cell" id="6"></td>
+        <td class="cell" id="7"></td>
+        <td class="cell" id="8"></td>
+      </tr>
     </table>
-    <div class="endgame">
-        <div class="text"></div>
+     
     </div>
-    <button onClick="startGame()">Play Again</button>
-
-
-    <script scr='ttt.js'></script>
-</body>
-
-</html>
+  
+    <div class="endgame">
+      <div class="text"></div>
+       <button onClick="startGame()">
+         Play Again
+      </button>
+    </div>
+  
+    <div class="choose">
+      <div class="text">Pick Your Symbol</div>
+       <button id="X" onClick="chooseSym('X')">X</button>
+      <button id="O" onClick="chooseSym('O')">O</button>
+    </div>
+  
+  </body>
+  <script scr='ttt.js'></script>
+  </html>
